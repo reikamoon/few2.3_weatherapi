@@ -15,19 +15,24 @@ function Weather() {
         const temp = json.main.temp
         const desc = json.weather[0].description
         const name = json.name
-        const test = json.weather[0].main
+        const main = json.weather[0].main
+        const wind = json.wind.speed
+        const icon = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png"
         console.log(json)
-        setData({ temp, desc, name, test})
+        setData({ temp, desc, name, main, wind, icon})
     }
 
     return (
         <div className="Weather">
+        <h1>Weather App</h1>
         {data ? <DisplayWeather {...data}/>: null}
-        <form onSubmit={e => {
+        <form
+        onSubmit={e => {
             e.preventDefault()
             getWeather()
         }}>
         <input 
+        placeholder="Enter your zip code..."
         value={zip}
         onChange={ e => setZip(e.target.value)}
         />

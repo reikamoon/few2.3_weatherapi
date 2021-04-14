@@ -1,5 +1,7 @@
-body html #root {
+body, html, #root {
   height: 100%;
+ background-image: linear-gradient(rgb(122, 194, 238), rgb(22, 63, 102));
+ overflow: hidden;
 }
 
 body {
