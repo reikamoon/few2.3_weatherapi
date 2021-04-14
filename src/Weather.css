@@ -1,0 +1,8 @@
+body html #root {
+    height: 100%;
+}
+
+.Weather {
+    text-align: center;
+    justify-content: center;
+}
