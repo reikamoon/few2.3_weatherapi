@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './Weather.css'
-import DisplayWeather from './DisplayWeather'
+import DisplayWeather from '../DisplayWeather/DisplayWeather'
 
 function Weather() {
     const [zip, setZip] = useState('')
