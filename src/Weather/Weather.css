@@ -34,6 +34,17 @@ body html #root {
     margin: 0;
 }
 
+.unitSelect label {
+    font-family: "Poppins";
+}
+
+.unitSelect select {
+    outline: 0;
+    font-family: "Poppins";
+    padding: 0em;
+    justify-content: center;
+}
+
 .param h2 {
     font-size: 40px;
     font-family: "Poppins";

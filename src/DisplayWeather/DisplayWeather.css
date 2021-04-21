@@ -2,10 +2,15 @@ body {
     height: 100%;
 }
 
+
 .fa-city {
     color: white;
 }
 
 .fa-wind {
     color: white;
+}
+
+.fa-exclamation-circle {
+    color: red;
 }

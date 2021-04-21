@@ -2,10 +2,15 @@ import React from 'react'
 import './DisplayWeather.css'
 
 function DisplayWeather(props) {
+      if (props.cod !== 200) {
+          return (
+              <p><i class="fas fa-exclamation-circle"></i>{props.cod}: {props.message}</p>
+          )
+        }
     return (
         <div>
         <div className="temp">
-        <h1>{props.temp}<img className="icon" src={props.icon}></img></h1>
+        <h1>{props.temp}<img className="icon" src={props.icon} alt="icon"></img></h1>
         </div>
         <div className="cityname"><h1><i className="fas fa-city"></i>{props.name}</h1></div>
         <div className="param">
